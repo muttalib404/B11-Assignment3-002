@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
     <script src="https://cdn.tailwindcss.com"></script>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
 
 <style>
     font.sora{
@@ -18,31 +23,74 @@ font.poppins{
 }
 </style>
 </head>
-<body>
-    <header>
-        <nav class="flex justify-around mt-5">
+<body class="md:mx-56">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]" >
+        <nav class="flex md:flex md:justify-between md:items-center w-[90%] mt-4 mx-auto space-x-4">
             <div>
-                <img src="Assets/images/logo-header.png" alt="">
+                <img src="images/logo-header.png" alt="">
             </div>
             <div>
-                <a href="">Product</a>
-                <a href="">Services</a>
-                <a href="">Contact us</a>
+               <ul class="flex justify-between gap-4">
+                <li><a class="hover:text-gray-500" href="#">Product</a></li>
+                <li><a class="hover:text-gray-500" href="#">Services</a></li>
+                <li><a class="hover:text-gray-500" href="#">Contact us</a></li>
+               </ul>
             </div>
+            
             <div>
                 <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.2231 4.78782H22.3112L20.7883 8.94168H7.54328C5.59011 8.94168 4.18301 10.8156 4.72779 12.6912L5.32459 14.746L3.67878 14.52L3.67879 14.52L3.67089 14.519C2.82923 14.4125 2.14916 13.7809 1.98099 12.9492L0.80993 7.15693C0.562336 5.93227 1.49856 4.78782 2.748 4.78782H22.2231Z" stroke="#111111" stroke-width="1.5"/>
                     <path d="M19.8383 11.5326L18.1974 16.0081L18.0209 16.4894L8.13463 15.1319L7.21586 11.9686L7.21586 11.9686C7.15251 11.7505 7.31612 11.5326 7.54325 11.5326H19.8383ZM17.0571 20.3962H18.7099L19.1242 21.1126C19.2457 21.3226 19.3154 21.5661 19.3154 21.828C19.3154 22.6188 18.6743 23.2599 17.8836 23.2599C17.0928 23.2599 16.4518 22.6188 16.4518 21.828C16.4518 21.5661 16.5214 21.3226 16.6429 21.1126L17.0571 20.3962ZM3.72772 20.3962H4.55417L4.9684 21.1126C5.08984 21.3226 5.15953 21.5661 5.15953 21.828C5.15953 22.6188 4.51848 23.2599 3.72772 23.2599C2.93696 23.2599 2.2959 22.6188 2.2959 21.828C2.2959 21.0373 2.93694 20.3962 3.72772 20.3962Z" stroke="#111111" stroke-width="1.5"/>
                     </svg>                    
             </div>
-            <div class="">
-                <button class="border border">Login</button>
-                <button>Register</button>
+            
+            <div class="space-x-4">
+            <button class="border border-[#179800] px-5 py-1 rounded-md rounded-lg">Login</button>
+                <button class="bg-[#179800] text-white px-5 py-1 rounded-md rounded-lg">Register</button>
             </div>
+            
         </nav>
+        <!-- banner -->
+         <div class="mt-10 justify-items-center">
+            <h1 class="font-semibold text-4xl items-center">Freshness <span class="text-[#179800]">You Can <br>Count</span>
+                On, Prices You’ll Love!</h1>
+                <p class="items-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+                <div class="min-w-lg-72 min-lg:h-56 min-md:w-72 min-md:h-56 px-32"><img src="images/hero-vegetables.png" alt=""></div>
+         </div>
 
     </header>
     <main>
+        <section class="m-12">
+            <!-- Services -->
+             <h1 class="font-semibold font-sora text-4xl text-[#179800] mt-24 m-8">Services</h1>
+             <div class="justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-light text-xl mx-8 gap-4">
+                <div class="bg-[#EFEBE3] rounded-lg shadow-md px-12 py-10  max-w-88 max-h-88">
+                <div class="">
+                    <img src="images/service.png" alt="">
+                    <h2>24/7 Services </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                </div>
+                <div class="bg-[#EFEBE3] rounded-lg shadow-md px-12 py-10 max-w-88 max-h-88">
+                <div>
+                    <img src="images/delivery.png" alt="">
+                    <h2>Fast Delivery</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                </div>
+             <div class="bg-[#EFEBE3] rounded-lg shadow-md px-12 py-10  max-w-88 max-h-88">
+                <div>
+                    <img src="images/healthy.png" alt="">
+                    <h2>Healthy Products</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                </div>
+                </div>
+                
+        </section>
 
     </main>
     <footer>
