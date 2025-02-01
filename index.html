@@ -68,8 +68,11 @@
         <nav class="border-b-2 border-green-100 md:border-none py-3 ">
             <div class="navbar">
                 <div class="navbar-start">
-                    <a class="btn btn-ghost text-xl">
+                    <a class="btn btn-ghost text-xl hidden md:block">
                         <img src="./images/logo-header.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./images/main-logo.svg" class="w-[50px] md:hidden" alt="">
                     </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -88,14 +91,14 @@
                     </div>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-accent" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                            class="menu menu-sm items-end dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
                             <li><a>Product</a></li>
                             <li><a>Service</a></li>
                             <li><a>Contact Us</a></li>
