@@ -10,16 +10,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                accent: '#179800'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        accent: '#179800'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <!-- Links for Font Awesome -->
     <script src="https://kit.fontawesome.com/0369d32fa5.js" crossorigin="anonymous"></script>
     <!-- Links for Google Fonts -->
@@ -64,11 +64,11 @@
                 </div>
                 <div class="navbar-end">
                     <div class="hidden md:flex items-center justify-end gap-6">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <a class="btn">Login</a>
+                        <i class="fa-solid fa-magnifying-glass cursor-pointer font-bold text-2xl mr-1"></i>
+                        <i class="fa-solid fa-cart-shopping cursor-pointer font-bold text-2xl mr-1"></i>
+                        <a class="btn bg-white text-black border-accent">Login</a>
                         <a class="btn bg-accent text-white">Register</a>
-                    </div>                    
+                    </div>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -89,22 +89,22 @@
         </nav>
         <!-- banner -->
         <div class="mt-10 lg:mt-[60px]">
-            <h1 class="font-semibold text-4xl md:text-6xl mb-6 text-[1.25rem] text-center">Freshness <span class="text-accent">You Can
+            <h1 class="font-semibold text-4xl md:text-6xl mb-6 text-[1.25rem] text-center">Freshness <span
+                    class="text-accent">You Can
                     <br>Count</span>
                 On, Prices You’ll Love!</h1>
             <p class="text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry
                 <br>staples, we’ve got you covered every day!
             </p>
-            <div class="flex justify-center"><img class="" src="images/hero-vegetables.png"
-                    alt=""></div>
+            <div class="flex justify-center"><img class="" src="images/hero-vegetables.png" alt=""></div>
         </div>
 
     </header>
-    <main class="hidden">
-        <section class="">
+    <main class="">
+        <section class="px-5 md:px-[80px] lg:px-[120px]">
             <!-- Services -->
             <h1 class="font-semibold font-sora text-4xl text-[#179800] mt-24 m-8">Services</h1>
-            <div class="justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 font-light text-xl mx-8 gap-4">
+            <div class="justify-center grid grid-cols-1 md:grid-cols-3 font-light text-xl gap-5 md:gap-8 ">
 
                 <div class="bg-[#EFEBE3] rounded-lg shadow-md px-12 py-10  max-w-88 max-h-88 ">
                     <div class="flex justify-center">
@@ -144,9 +144,12 @@
             </div>
 
         </section>
-        <!-- Discount  -->
-        <div class=" flex items-center md:flex sm:flex mt-40 gap-8 bg-[#EFEBE3] w-[100%] h-775 px-16 py-32 ml-4">
-            <div class="bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] w-88 h-80 rounded-xl px-8">
+        <!-- Products  -->
+        <section
+            class="grid grid-cols-1 md:grid-cols-[500px_auto] mt-40 gap-8 bg-[#EFEBE3] px-5 md:px-[80px] lg:px-[120px] pb-10 pt-20 md:pb-20  relative md:pt-[140px]">
+            <h1 class="text-accent text-4xl font-bold absolute left-5 md:left-20 lg:left-[120px] top-8">Popular Products</h1>
+            <div
+                class="bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] w-88 h-80 rounded-xl px-8 min-h-[400px] md:min-h-[400px] relative">
                 <!-- 30% off -->
                 <div>
                     <h2 class="font-semibold font text-white mt-10 text-2xl">30% off</h2>
@@ -154,13 +157,15 @@
                         delay any longer.</p>
                 </div>
                 <div class="mt-4"><button class="bg-white text-[#111111] px-5 py-1 rounded-md">Buy Now</button></div>
-                <div class="relative"><img src="images/vegetable-offer.png" alt="vegetable-offer.png"
-                        class="absolute -top-14 right-0 w-40 h-48 "></div>
+                <div>
+                    <img src="images/vegetable-offer.png" alt="vegetable-offer.png"
+                        class="absolute bottom-0 right-0 w-[220px] md:w-[270px]">
+                </div>
 
             </div>
-            <div class="grid grid-cols-3 grid-rows-3 md:grid-cols-3 md:grid-rows-3 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <!-- grid  -->
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24 rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md  rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/onion.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -171,7 +176,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24  rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md   rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/tomato.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -182,7 +187,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24  rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md   rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/potato.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -193,7 +198,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24 rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md  rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/tomato.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -204,7 +209,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24 rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md  rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/onion.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -215,7 +220,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24  rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md   rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/tomato.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -226,7 +231,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24 rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md  rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/onion.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -237,7 +242,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24 rounded-xl gap-4 px-4 py-4">
+                <div class="flex bg-[#FFFFFF] shadow-md  rounded-xl gap-4 px-4 py-4">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/potato.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -248,7 +253,7 @@
                         <p class="font-medium">$49.99</p>
                     </div>
                 </div>
-                <div class="flex bg-[#FFFFFF] shadow-md w-64 h-24  rounded-xl gap-4 px-4 py-4">
+                <div class="md:flex bg-[#FFFFFF] shadow-md   rounded-xl gap-4 px-4 py-4 hidden">
                     <div class="bg-[#EFEBE3] rounded-xl"><img src="images/potato.png" alt=""></div>
                     <div>
                         <div class="flex gap-2"><img class="w-4 h-4" src="images/star.jpg" alt="">
@@ -261,32 +266,36 @@
                 </div>
 
             </div>
-        </div>
+        </section>
         <!-- Arrival & Offer  -->
-        <h1 class="text-[#179800] text-2xl font-semibold mt-16 m-8 px-8">Arrival & Offers</h1>
-        <div class="flex justify-center w-90% gap-4">
-            <!-- Dawat  -->
-            <div class="bg-[#115414] max-w-88 h-56 flex gap-32 px-6 rounded-xl">
-                <div class="mt-6 w-36 h-12"><img src="images/dawat-logo.png" alt="">
-                    <button class="bg-[#63B76D] w-44 h-10 rounded-xl mt-4 text-[#FFFFFF]">Cook Exotic Dishes</button>
-                    <h1 class="mt-4 font-poppins text-2xl text-[#FFFFFF]">UP to<span class="font-bold">20% OFF</span>
-                    </h1>
+        <section class="px-5 md:px-[80px] lg:px-[120px]">
+            <h1 class="text-[#179800] text-4xl font-bold mt-16 m-8 px-8">Arrival & Offers</h1>
+            <div class="grid grid-cols-1 md:grid-cols-[60%_auto] gap-8 md:gap-10">
+                <!-- Dawat  -->
+                <div class="bg-[#115414] flex items-center justify-evenly px-6 rounded-xl">
+                    <div class="mt-6 flex flex-col justify-center">
+                        <img src="images/dawat-logo.png" alt="">
+                        <button class="bg-[#63B76D] rounded-xl mt-4 text-[#FFFFFF] p-5">Cook Exotic Dishes</button>
+                        <h1 class="mt-4 font-poppins text-2xl text-[#FFFFFF]">UP to<span class="font-bold">20% OFF</span>
+                        </h1>
+                    </div>
+
+                    <div class=" mt-12"><img src="images/dawat-mock-up.png" alt=""></div>
+
+                </div>
+                <!-- India Gate  -->
+                <div class="bg-[#102861] flex items-center justify-evenly px-6 rounded-xl">
+                    <div class=" mt-6 flex flex-col justify-center"><img src="images/india-gate-logo.png" alt="">
+                        <button class="bg-[#2A4D97] rounded-xl p-5 mt-4 text-[#FFFFFF]">World’s No.1 Rice</button>
+                        <h1 class="mt-2 font-poppins text-xl text-[#FFFFFF]">UP to <span class="font-bold">40%
+                                OFF</span>
+                        </h1>
+                    </div>
+                    <div class="mt-16"><img src="images/india-gate-mock-up.png" alt=""></div>
                 </div>
 
-                <div class="w-48 h-32 mt-12"><img src="images/dawat-mock-up.png" alt=""></div>
-
             </div>
-            <!-- India Gate  -->
-            <div class="bg-[#102861] flex max-w-88 h-56 gap-28 px-6 rounded-xl">
-                <div class="w-16 h-24 mt-6"><img src="images/india-gate-logo.png" alt="">
-                    <button class="bg-[#2A4D97] w-40 h-10 rounded-xl mt-4 text-[#FFFFFF]">World’s No.1 Rice</button>
-                    <h1 class="mt-2 font-poppins text-xl text-[#FFFFFF]">UP to <span class="font-bold">40% OFF</span>
-                    </h1>
-                </div>
-                <div class="w-24 h-32 mt-16"><img src="images/india-gate-mock-up.png" alt=""></div>
-            </div>
-
-        </div>
+        </section>
 
     </main>
     <footer>
